@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane fx:id="tabPane" layoutX="137.0" layoutY="92.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0">
+        <tabs>
+          <Tab fx:id="markDiskTab" text="Mark Disk">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutX="9.0" layoutY="20.0" prefHeight="298.0" prefWidth="386.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                          <columns>
+                            <TableColumn fx:id="diskColumn" prefWidth="159.0" resizable="false" text="Disks" />
+                            <TableColumn fx:id="templateColumn" minWidth="0.0" prefWidth="410.0" resizable="false" text="Template" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="markDiskButton" layoutX="245.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" text="Mark disks" AnchorPane.bottomAnchor="5.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="programSetupTab" text="Program setup">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="setupList" layoutX="-10.0" layoutY="5.0" prefHeight="451.0" prefWidth="406.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                        <Button fx:id="setupButton" layoutX="416.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="155.0" text="Setup" AnchorPane.rightAnchor="5.0" />
+                        <Button fx:id="updateListButton" layoutX="415.0" layoutY="61.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="155.0" text="Update list" AnchorPane.rightAnchor="5.0" />
+                        <TextArea fx:id="propView" editable="false" layoutX="415.0" layoutY="107.0" prefHeight="356.0" prefWidth="161.0" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="100.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <MenuBar fx:id="menuBar" layoutX="10.0" layoutY="14.0" prefHeight="35.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="logList" editable="false" opacity="0.41" prefHeight="40.0" prefWidth="200.0" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+</AnchorPane>

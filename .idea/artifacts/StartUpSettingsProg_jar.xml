@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StartUpSettingsProg:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StartUpSettingsProg_jar</output-path>
+    <root id="archive" name="StartUpSettingsProg.jar">
+      <element id="module-output" name="StartUpSettingsProg" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/JIconExtract.jar" path-in-jar="/" />
+      <element id="library" level="project" name="JIconExtract" />
+    </root>
+  </artifact>
+</component>
